@@ -1,0 +1,18 @@
+.star-rating {
+    margin-bottom: 15px;
+    
+    .star-icon,
+    .star-icon:hover ~ .star-icon,
+    .star-icon.selected ~ .star-icon {
+        color: #21212149;
+
+        &.editable {
+            cursor: pointer;
+        }
+    }
+
+    &:hover .star-icon,
+    .star-icon {
+        color: #eb0;
+    }
+}

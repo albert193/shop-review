@@ -1,0 +1,109 @@
+.shop-detail {
+    display: flex;
+
+    .image-container, .information-container {
+        flex: 50%;
+    }
+
+    .image-container {
+        background: url("../../../assets/images/store-front.jpg") no-repeat top;
+        background-size: contain;
+        background-color: #ebebeb;
+    }
+
+    .information-container {
+        background-color: #F9F5F5;
+        color: #212121;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name, .title {
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 40px;
+        }
+
+        .title {
+            text-transform: uppercase;
+            margin: 30px 0 15px;
+        }
+
+        .information {
+            display: flex;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            .address-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .information-icon {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .opening-hours-container {
+            display: flex;
+            align-items: center;
+
+            .shopping-bag-icon {
+                font-size: 35px;
+                margin-right: 20px;
+            }
+
+            .days-container {
+                flex: 100%;
+
+                .days {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .about-us-container {
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #212121;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        & .information-container {
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        & {
+            flex-direction: column;
+
+            .image-container, .information-container {
+                flex: auto;
+            }
+
+            .image-container {
+                height: 100vh;
+            }
+        }
+    }
+}

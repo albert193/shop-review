@@ -1,0 +1,12 @@
+.shop-review {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+
+    @media only screen and (max-width: 600px) {
+        & {
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+$color-error: #ed2553;
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-width: 400px;
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input, textarea {
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        border-radius: 5px;
+
+        &.invalid {
+            border-color: $color-error;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .required-star, .error-message {
+        color: $color-error;
+    }
+
+    .error-message {
+        margin-top: 5px;
+    }
+}

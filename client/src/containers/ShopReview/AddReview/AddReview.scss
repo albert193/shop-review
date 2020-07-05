@@ -1,0 +1,44 @@
+.add-review {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    max-width: 400px;
+
+    .title {
+        align-self: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .how-would-you-rate {
+        margin-bottom: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-review-btn {
+        align-self: center;
+        background-color: #ebebeb;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background-color: darken($color: #ebebeb, $amount: 2);
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        &, .title, .add-review-btn {
+            align-self: flex-start;
+        }
+    }
+}
